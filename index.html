@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!-- Relacionar archivo css-->
+          <link rel="stylesheet" href="estilos.css">
+          <title>Actividad Práctica 09 - JavaScript Unidad 1</title>
+
+
+          <!-- Relacionar con fuente de letra google font -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+                    rel="stylesheet">
+
+
+          <style>
+                    /* ej-18-permiso */
+                    .error {
+                              border: 1px solid red;
+                    }
+          </style>
+</head>
+
+<body>
+          <main>
+
+                    <h1>Actividad Práctica 09 - JavaScript Unidad 1</h1>
+                    <h2>Alumna: Sandra Lopez</h2>
+                    <br>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-1 ej">
+                                        <h2>1. Escribe un programa de una sola línea que haga que aparezca en la
+                                                  pantalla un
+                                                  alert que diga “Hello World”.</h2>
+                                        <p class="comentario">Voy a crear un boton el cual ejecutará una función de
+                                                  JavaScript, la cual
+                                                  hará que
+                                                  aparezca un alert en pantalla con la leyenda "Hello World"</p>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function aparecerAlert() { // boton "Aparecer Alert"<br>
+                                                  alert("Hello World");<br>
+                                                  }<br>
+                                        </p>
+
+                                        <button onclick="aparecerAlert()">Aparecer Alert</button>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-2 ej">
+                                        <h2>2. Escribe un programa de una sola línea que escriba en la pantalla un texto
+                                                  que
+                                                  diga “Hello World” (document.write).
+                                        </h2>
+                                        <p class="comentario">Voy a crear un boton el cual ejecutará una función de
+                                                  JavaScript, la cual
+                                                  hará que
+                                                  aparezca un Texto en pantalla con la leyenda "Hello World"</p>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function aparecerTexto() { // boton "Aparecer Texto"<br>
+                                                  document.getElementById("ej-2-texto-hello").innerText = "Hello
+                                                  World";<br>
+                                                  }<br>
+                                        </p>
+                                        <button onclick="aparecerTexto()">Aparecer Texto</button>
+                                        <p id="ej-2-texto-hello">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-3 ej">
+                                        <h2>3. Escribe un programa de una sola línea que escriba en la pantalla el
+                                                  resultado
+                                                  de sumar 3 + 5.
+                                        </h2>
+                                        <p class="comentario">Voy a crear un boton el cual ejecutará una función de
+                                                  JavaScript, la cual
+                                                  hará que
+                                                  aparezca el resultado de 3 + 5</p>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  // defino variables<br>
+                                                  a = 3;<br>
+                                                  b = 5;<br>
+                                                  resultado = 0;<br>
+                                                  function aparecerResultado() { // boton "Aparecer Suma"<br>
+                                                  resultado = a + b;<br>
+                                                  document.getElementById('ej-3-texto-resultado').innerText =
+                                                  resultado;<br>
+                                                  }<br>
+                                        </p>
+                                        <button onclick="aparecerResultado()">Aparecer Suma</button>
+                                        <p id="ej-3-texto-resultado">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-4 ej">
+                                        <h2>4. Escribe un programa de dos líneas que pida el nombre del usuario con un
+                                                  prompt y escriba un texto que diga “Hola nombreUsuario”.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: Voy a crear un boton, cual aparecerá el prompt en pantalla.
+                                                  </li>
+                                                  <li>2do: establezco un parrafo en html con un id, en este parrafo
+                                                            aparecera el
+                                                            texto saludo.</li>
+                                                  <li>3ro: en el archivo js creo la función para el botón.
+                                                            Una función que:
+                                                            guarde en una variable la función prompt
+                                                            llame al parrafo designado por su id, y actualice su texto
+                                                            (innerText).</li>
+                                        </ul>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function aparecerPrompt() { // boton "Aparecer Prompt" <br>
+                                                  const nombreUsuario = prompt('Escribe tu nombre'); // <br>
+                                                  document.getElementById('ej-4-texto-saludo').innerText = "Hola " +
+                                                  nombreUsuario;<br>
+                                        </p>
+                                        <button onclick="aparecerPrompt()" id="ej-4-btnSaludo">Aparecer Prompt</button>
+                                        <p id="ej-4-texto-saludo">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-5 ej">
+                                        <h2>5. Escribe un programa de tres líneas que pida un número, pida otro número y
+                                                  escriba el resultado de sumar estos dos números.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: crear dos input, donde se escribirán los correspondientes
+                                                            números</li>
+                                                  <li>2do: crear un boton, que llamará a una función</li>
+                                                  <li>3ro: establezco un parrafo en html con un id, en este parrafo
+                                                            aparecerá el
+                                                            resultado de la suma.</li>
+                                                  <li>4to: esta función: guardará en dos variables lo ingresado en cada
+                                                            input.
+                                                            Haciendo referencia al documento html (document),
+                                                            identificando a cada input por su id (getElementById), para
+                                                            obtener
+                                                            específicamente sus valores (value).
+                                                            Luego realice la suma parseando las variables utilizadas,
+                                                            llame al
+                                                            parrafo designado por su id, y actualice su texto
+                                                            (innerText) con el
+                                                            resultado de la suma.</li>
+                                        </ul>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularSuma() { // boton "Calcular suma" <br>
+                                                  const numero1 = document.getElementById('ej-5-num-1').value; <br>
+                                                  const numero2 = document.getElementById('ej-5-num-2').value; <br>
+                                                  //parseInt() analiza un argumento de cadena y devuelve un número
+                                                  entero de la raíz o base especificada. <br>
+                                                  let resultadoSuma = parseInt(numero1) + parseInt(numero2); <br>
+                                                  document.getElementById('ej-5-suma').innerText = resultadoSuma; <br>
+                                                  } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba el primer número entero"
+                                                  id="ej-5-num-1">
+                                        <input type="text" placeholder="Escriba el segundo número entero"
+                                                  id="ej-5-num-2">
+                                        <button onclick="calcularSuma()">Calcular suma</button>
+                                        <p id="ej-5-suma">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-6 ej">
+                                        <h2>6. Escribe un programa que pida dos números y escriba en la pantalla cual es
+                                                  el
+                                                  mayor.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: crear dos input, donde se escribirán los correspondientes
+                                                            números</li>
+                                                  <li>2do: crear un boton, que llamará a una función</li>
+                                                  <li>3ro: establezco un parrafo en html con un id, en este parrafo
+                                                            aparecerá el
+                                                            resultado de la suma.</li>
+                                                  <li>4to: esta función: que contendrá el condicional if() para
+                                                            determinar que
+                                                            número es mayor.
+                                                            guardará en dos variables lo ingresado en cada input.
+                                                            Haciendo referencia al documento html (document),
+                                                            identificando a cada input por su id (getElementById), para
+                                                            obtener
+                                                            específicamente sus valores (value).
+                                                            <br>Y actualice su texto (innerText) con el
+                                                            número mayor ingresado.
+                                                  </li>
+                                        </ul>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularMayorEj6() { // boton "Calcular mayor"<br>
+                                                  const num1 = document.getElementById('ej-6-num-1');<br>
+                                                  const num2 = document.getElementById('ej-6-num-2');<br>
+                                                  <br>
+                                                  const numero1 = Number(num1.value);<br>
+                                                  const numero2 = Number(num2.value);<br>
+                                                  <br>
+                                                  if (numero1 > numero2) {<br>
+                                                  document.getElementById('ej-6-mayor').innerText = 'El número mayor es:
+                                                  ' + numero1;<br>
+                                                  } else if (numero1 < numero2) {<br>
+                                                            document.getElementById('ej-6-mayor').innerText = 'El número
+                                                            mayor es: ' + numero2;<br>
+                                                            } else {<br>
+                                                            document.getElementById('ej-6-mayor').innerText = 'No hay
+                                                            número mayor';<br>
+                                                            }<br>
+                                                            } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba el primer número entero" id="ej-6-num-1"
+                                                  style="color: red;">
+                                        <input type="text" placeholder="Escriba el segundo número entero"
+                                                  id="ej-6-num-2">
+                                        <button onclick="calcularMayorEj6()">Calcular mayor</button>
+                                        <p id="ej-6-mayor">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-7 ej">
+                                        <h2>7. Escribe un programa que pida 3 números y escriba en la pantalla el mayor
+                                                  de
+                                                  los tres.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: crear tres input, donde se escribirán los correspondientes
+                                                            números
+                                                  </li>
+                                                  <li>2do: crear un boton, que llamará a una función</li>
+                                                  <li>3ro: establezco un parrafo en html con un id, en este parrafo
+                                                            aparecerá el
+                                                            resultado de la suma.</li>
+                                                  <li>4to: esta función: que contendrá el condicional if() para
+                                                            determinar que
+                                                            número es mayor.
+                                                            guardará en tres variables lo ingresado en cada input.
+                                                            Haciendo referencia al documento html (document),
+                                                            identificando a cada input por su id (getElementById), para
+                                                            obtener
+                                                            específicamente sus valores (value).
+                                                            <br>Y actualice su texto (innerText) con el número mayor
+                                                            ingresado.
+                                                  </li>
+                                        </ul>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularMayorEj7() { // boton "Calcular mayor" <br>
+                                                  const numero1 =
+                                                  Number(document.getElementById('ej-7-num-1').value);<br>
+                                                  const numero2 =
+                                                  Number(document.getElementById('ej-7-num-2').value);<br>
+                                                  const numero3 =
+                                                  Number(document.getElementById('ej-7-num-3').value);<br>
+                                                  <br>
+                                                  if (((numero1) > (numero2)) && ((numero1) > (numero3))) {<br>
+                                                  document.getElementById('ej-7-mayor').innerText = 'El número mayor es:
+                                                  ' + numero1;<br>
+                                                  } else if (((numero2) > (numero1)) && ((numero2) > (numero3))) {<br>
+                                                  document.getElementById('ej-7-mayor').innerText = 'El número mayor es:
+                                                  ' + numero2;<br>
+                                                  } else if (((numero3) > (numero1)) && ((numero3) > (numero2))) {<br>
+                                                  document.getElementById('ej-7-mayor').innerText = 'El número mayor es:
+                                                  ' + numero3;<br>
+                                                  } else {<br>
+                                                  document.getElementById('ej-7-mayor').innerText = 'No hay número
+                                                  mayor' + numero1 + numero2 + numero3;<br>
+                                                  }<br>
+                                                  }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba el primer número entero"
+                                                  id="ej-7-num-1">
+                                        <input type="text" placeholder="Escriba el segundo número entero"
+                                                  id="ej-7-num-2">
+                                        <input type="text" placeholder="Escriba el tercer número entero"
+                                                  id="ej-7-num-3">
+                                        <button onclick="calcularMayorEj7()">Calcular mayor</button>
+                                        <p id="ej-7-mayor">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-8 ej">
+                                        <h2>8. Escribe un programa que pida un número y diga si es divisible por 2.
+                                                  <br> nota: En matemáticas se dice que un número es divisible entre
+                                                  otro siempre
+                                                  y cuando su división sea exacta, es decir, el resto sea cero.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: crear un input, donde se escribirá el correspondiente número
+                                                  </li>
+                                                  <li>2do: crear un boton, que llamará a una función</li>
+                                                  <li>3ro: Establezco un parrafo en html con un id, en este parrafo
+                                                            aparecerá el
+                                                            comentario.</li>
+                                                  <li>4to: Esta función: que contendrá el condicional if() para
+                                                            determinar si el
+                                                            número ingresado es divisible por 2.
+                                                            guardará en una variable lo ingresado en el input.
+                                                            Haciendo referencia al documento html (document),
+                                                            identificando al input por su id (getElementById), para
+                                                            obtener
+                                                            específicamente su valore (value).
+                                                            <br>Y actualice su texto (innerText) con el comentario
+                                                            final.
+                                                  </li>
+                                        </ul>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularDivisiblePor2() { // boton "Divisibilidad por 2" <br>
+                                                  const numero1 = document.getElementById('ej-8-num-1').value;<br>
+                                                  <br>
+                                                  if ((numero1 % 2) == 0) { // % calcula el resto de una división<br>
+                                                  document.getElementById('ej-8-divisible').innerText = 'El número ' +
+                                                  numero1 + ' es divisible por 2';<br>
+                                                  } else {<br>
+                                                  document.getElementById('ej-8-divisible').innerText = 'El número ' +
+                                                  numero1 + ' NO es divisible por 2';<br>
+                                                  }<br>
+                                                  }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-8-num-1">
+                                        <button onclick="calcularDivisiblePor2()">Divisibilidad por 2</button>
+                                        <p id="ej-8-divisible">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-9 ej">
+                                        <h2>9. Escribe un programa que pida una frase y escriba cuantas veces aparece la
+                                                  letra a.
+                                        </h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: Crear un input, donde se escribirá la correspondiente frase
+                                                  </li>
+                                                  <li>2do: Crear un boton, que llamará a una función</li>
+                                                  <li>3ro: Establezco un parrafo en html con un id, en este parrafo
+                                                            aparecerá la
+                                                            cantidad solicitada.</li>
+                                                  <li>4to: Guardar en una variable la letra solicitada a contar.</li>
+                                                  <li>5to: Guardar en una variable lo ingresado en el input.
+                                                            Haciendo referencia al documento html (document),
+                                                            identificando al input por su id (getElementById), para
+                                                            obtener
+                                                            específicamente su valore (value). </li>
+                                                  <li>6to: La función: que contendrá un ciclo for, para recorrer la
+                                                            frase letra
+                                                            por letra, a modo de array.
+                                                            Dentro del for, un condicional if, que compara la letra
+                                                            solicitada con
+                                                            la letra de la
+                                                            frase en la posicion i de la frase.
+                                                            Contendrá un contador, que ira incrementandose según
+                                                            encuentre la
+                                                            letra solicitada dentro de la frase.
+                                                            <br>Y actualice su texto (innerText) con el comentario
+                                                            final.
+                                                  </li>
+                                        </ul>
+
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularAparicionesEj9() { // boton "Contar letra a" <br>
+                                                  // defino las variables<br>
+                                                  const letra = 'aAáÁ'; // entre comillas porque es un string<br>
+                                                  const frase = document.getElementById('ej-9-frase').value; // capturo
+                                                  lo que se escriba en el input<br>
+                                                  contadorDeLetra = 0;<br>
+                                                  // un for que recorra la frase como un array.<br>
+                                                  for (let i = 0; i < frase.length; i++) {<br>
+                                                            if (letra.indexOf(frase[i]) !== -1) {<br>
+                                                            contadorDeLetra = contadorDeLetra + 1;<br>
+                                                            }<br>
+                                                            }<br>
+                                                            // ahora se debe actualiar el parrafo donde debe contener el
+                                                            número de apariciones solicitado.<br>
+                                                            document.getElementById('ej-9-apariciones-letra-a').innerText
+                                                            = contadorDeLetra;<br>
+                                                            }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba una frase" id="ej-9-frase">
+                                        <button onclick="calcularAparicionesEj9()">Contar letra a</button>
+                                        <p id="ej-9-apariciones-letra-a">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-10 ej">
+                                        <h2>10. Escribe un programa que pida una frase y escriba las vocales que
+                                                  aparecen.
+                                        </h2>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  /* El método indexOf() retorna el primer índice en el que se puede
+                                                  encontrar un elemento dado en el array, ó retorna -1 si el elemento no
+                                                  esta presente. */ <br>
+                                                  <br>
+                                                  function calcularAparicionesEj10() { // boton "Contar vocales"<br>
+                                                  // defino las variables<br>
+                                                  const vocales = 'aeiouAEIOUáéíóúÁÉÍÓÚ'; // entre comillas porque es
+                                                  unstring<br>
+                                                  const frase = document.getElementById('ej-10-frase').value; // capturo
+                                                  lo que se escriba en el input<br>
+                                                  contadorDeVocales = 0;<br>
+                                                  <br>
+                                                  for (let i = 0; i < frase.length; i++) { // un for que recorra la
+                                                            frase como un array.<br>
+                                                            if (vocales.indexOf(frase[i])!==-1) { <br>
+                                                            contadorDeVocales=contadorDeVocales + 1; } <br>
+                                                            } <br>
+                                                            //ahora se debe actualiar el parrafo donde debe contener el
+                                                            número de apariciones solicitado.<br>
+                                                            document.getElementById('ej-10-apariciones-vocales').innerText=contadorDeVocales;
+                                                            }
+                                        </p>
+                                        <br>
+                                        <input type="text" placeholder="Escriba una frase" id="ej-10-frase">
+                                        <button onclick="calcularAparicionesEj10()">Contar vocales</button>
+                                        <p id="ej-10-apariciones-vocales">-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-11 ej">
+                                        <h2>11. Escribe un programa que pida una frase y escriba cuántas de las letras
+                                                  que
+                                                  tiene son vocales.
+                                        </h2>
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularAparicionesEj11() { // boton "Contar vocales y
+                                                  Letras"<br>
+                                                  // defino las variables<br>
+                                                  const vocales = 'aeiouAEIOUáéíóúÁÉÍÓÚ'; // entre comillas porque es un
+                                                  string <br>
+                                                  const letras =
+                                                  'abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ';<br>
+                                                  const frase = document.getElementById('ej-11-frase').value; // capturo
+                                                  lo que se escriba en el input<br>
+                                                  contadorDeVocales = 0;<br>
+                                                  contadorDeLetras = 0;<br>
+                                                  <br>
+                                                  // un for que recorra la frase como un array.<br>
+                                                  for (let i = 0; i < frase.length; i++) { <br>
+                                                            if (letras.indexOf(frase[i])!==-1) { <br>
+                                                            contadorDeLetras=contadorDeLetras + 1; <br>
+                                                            if(vocales.indexOf(frase[i]) !==-1) {<br>
+                                                            contadorDeVocales=contadorDeVocales + 1;
+                                                            } <br>
+                                                            } <br>
+                                                            } // ahora sedebe actualiar el parrafo donde debe contener
+                                                            el número de apariciones solicitado.<br>
+                                                            document.getElementById('ej-11-apariciones-vocales-sobre-total').innerText='De
+                                                            un total de '+ contadorDeLetras + ' letras ' +
+                                                            contadorDeVocales + ' son vocales.' ;
+                                                            } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba una frase" id="ej-11-frase">
+                                        <button onclick="calcularAparicionesEj11()">Contar vocales y Letras</button>
+                                        <p id='ej-11-apariciones-vocales-sobre-total'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-12 ej">
+                                        <h2>12. Escribe un programa que pida una frase y escriba cuántas veces aparecen
+                                                  cada una de las vocales.
+                                        </h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function calcularAparicionesEj12() { // boton "Contar vocales y
+                                                  Letras" <br>
+                                                  <br>
+                                                  // defino las variables <br>
+                                                  const vocal_a = 'aAáÁ'; // entre comillas porque es un string <br>
+                                                  const vocal_e = 'eEéÉ'; <br>
+                                                  const vocal_i = 'iIíÍ'; <br>
+                                                  const vocal_o = 'oOóÓ'; <br>
+                                                  const vocal_u = 'uUúÚ'; <br>
+                                                  // vocales = [vocal_a, vocal_e, vocal_i, vocal_o, vocal_u]; <br>
+                                                  <br>
+                                                  const frase = document.getElementById('ej-12-frase').value; // capturo
+                                                  lo que se
+                                                  escriba en el input <br>
+                                                  contadorDeVocal_a = 0; <br>
+                                                  contadorDeVocal_e = 0; <br>
+                                                  contadorDeVocal_i = 0; <br>
+                                                  contadorDeVocal_o = 0; <br>
+                                                  contadorDeVocal_u = 0; <br>
+                                                  <br>
+                                                  // un for que recorra la frase como un array. <br>
+                                                  for (let i = 0; i < frase.length; i++) { <br>
+                                                            if (vocal_a.indexOf(frase[i]) !== -1) { <br>
+                                                            contadorDeVocal_a = contadorDeVocal_a + 1; <br>
+                                                            } if (vocal_e.indexOf(frase[i]) !== -1) { <br>
+                                                            contadorDeVocal_e = contadorDeVocal_e + 1; <br>
+                                                            } if (vocal_i.indexOf(frase[i]) !== -1) { <br>
+                                                            contadorDeVocal_i = contadorDeVocal_i + 1; <br>
+                                                            } if (vocal_o.indexOf(frase[i]) !== -1) { <br>
+                                                            contadorDeVocal_o = contadorDeVocal_o + 1; <br>
+                                                            } if (vocal_u.indexOf(frase[i]) !== -1) { <br>
+                                                            contadorDeVocal_u = contadorDeVocal_u + 1; <br>
+                                                            } <br>
+                                                            } <br>
+                                                            // ahora se debe actualiar el parrafo donde debe contener el
+                                                            número de
+                                                            apariciones solicitado. <br>
+                                                            document.getElementById('ej-12-apariciones-vocales').innerText
+                                                            =
+                                                            'Cantidad de vocales: \n a = ' + contadorDeVocal_a + '\n e =
+                                                            ' +
+                                                            contadorDeVocal_e + '\n i = ' + contadorDeVocal_i + '\n o =
+                                                            ' +
+                                                            contadorDeVocal_o + '\n u = ' + contadorDeVocal_u; <br>
+                                                            } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba una frase" id="ej-12-frase">
+                                        <button onclick="calcularAparicionesEj12()">Contar vocales y
+                                                  Letras</button>
+                                        <p id='ej-12-apariciones-vocales'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-13 ej">
+                                        <h2>13. Escribe un programa que pida un número y nos diga si es divisible por 2,
+                                                  3, 5 o
+                                                  7 (sólo hay que comprobar si lo es por uno de los cuatro)
+                                        </h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function esDivisible() { // boton "Es divisible?"<br>
+                                                  const numero = document.getElementById("ej-13-numero").value; //
+                                                  capturo lo que se escriba en el input.<br>
+                                                  if (numero % 2 == 0 || numero % 3 == 0 || numero % 5 == 0 || numero %
+                                                  7 == 0) {<br>
+                                                  document.getElementById('ej-13-es-divisible').innerText = 'Es
+                                                  divisible'<br>
+                                                  } else {<br>
+                                                  document.getElementById('ej-13-es-divisible').innerText = 'No es
+                                                  divisible'<br>
+                                                  }<br>
+                                                  } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-13-numero">
+                                        <button onclick="esDivisible()">Es divisible?</button>
+                                        <p id='ej-13-es-divisible'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-14 ej">
+                                        <h2>14. Añadir al ejercicio anterior que nos diga por cual de los cuatro es
+                                                  divisible (hay
+                                                  que decir todos por los que es divisible)
+                                        </h2>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function porCualesEsDivisibleEj14() { // boton "Es divisible?"<br>
+                                                  const numero = document.getElementById("ej-14-numero").value; //
+                                                  capturo lo que se escriba en el input.<br>
+                                                  divisiblePor = []; // en este array se irán guardando los números por
+                                                  los cuales es divisible número.<br>
+                                                  <br>
+                                                  if (numero % 2 == 0) {<br>
+                                                  divisiblePor.push(2);<br>
+                                                  } if (numero % 3 == 0) {<br>
+                                                  divisiblePor.push(3);<br>
+                                                  } if (numero % 5 == 0) {<br>
+                                                  divisiblePor.push(5);<br>
+                                                  } if (numero % 7 == 0) {<br>
+                                                  divisiblePor.push(7);<br>
+                                                  }<br>
+                                                  <br>
+                                                  if (divisiblePor.length < 1) {<br>
+                                                            document.getElementById('ej-14-es-divisible').innerText =
+                                                            'El número escrito NO es divisible por 2, 3, 5 y 7.';<br>
+                                                            } else {<br>
+                                                            document.getElementById('ej-14-es-divisible').innerText =
+                                                            'El número escrito SI es divisible por: ' +
+                                                            divisiblePor;<br>
+                                                            }<br>
+                                                            }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-14-numero">
+                                        <button onclick="porCualesEsDivisibleEj14()">Es divisible?</button>
+                                        <p id='ej-14-es-divisible'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-15 ej">
+                                        <h2>15. Escribir un programa que escriba en pantalla los divisores de un número
+                                                  dado.
+                                        </h2>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function porCualesEsDivisibleEj15() { // boton "Calcular
+                                                  divisores"<br>
+                                                  const numero = document.getElementById("ej-15-numero").value; //
+                                                  capturo lo que se escriba en el input.<br>
+                                                  divisiblePor = []; // en este array se irán guardando los números por
+                                                  los cuales es divisible número.<br>
+                                                  for (let i = 0; i < numero / 2; i++) {<br>
+                                                            if (numero % i == 0) {<br>
+                                                            divisiblePor.push(i);<br>
+                                                            }<br>
+                                                            }<br>
+                                                            /* Ahora tiene que mostrar en pantalla todos los divisores
+                                                            de número, y si no encontramos ninguno, <br>
+                                                            deberá mostrarse el mismo número, ya que todos los numeros
+                                                            son divisibles por si mismo. */<br>
+                                                            divisiblePor.push(numero);<br>
+                                                            document.getElementById('ej-15-divisores').innerText = 'El
+                                                            número escrito SI es divisible por: ' + divisiblePor;<br>
+                                                            }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-15-numero">
+                                        <button onclick="porCualesEsDivisibleEj15()">Calcular divisores</button>
+                                        <p id='ej-15-divisores'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-16 ej">
+                                        <h2>16. Escribir un programa que escriba en pantalla los divisores comunes de
+                                                  dos
+                                                  números dados.
+                                        </h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function divisorComun() { // boton "Calcuar divisor común"<br>
+                                                  const numero1 = document.getElementById("ej-16-numero-1").value; //
+                                                  capturo lo que se escriba en el input.<br>
+                                                  const numero2 = document.getElementById("ej-16-numero-2").value; //
+                                                  capturo lo que se escriba en el input.<br>
+                                                  divisiblePor = []; // en este array se irán guardando los números por
+                                                  los cuales es divisible número.<br>
+                                                  <br>
+                                                  if (numero1 > numero2) {<br>
+                                                  for (let i = 0; i < numero2 + 1; i++) {<br>
+                                                            if (numero1 % i == 0 && numero2 % i == 0) {<br>
+                                                            divisiblePor.push(i);<br>
+                                                            }<br>
+                                                            }<br>
+                                                            document.getElementById('ej-16-divisores').innerText = 'Los
+                                                            divisores comunes de los números escritos son: ' +
+                                                            divisiblePor;<br>
+                                                            } else {<br>
+                                                            for (let i = 0; i < numero1 + 1; i++) {<br>
+                                                                      if (numero1 % i == 0 && numero2 % i == 0) {<br>
+                                                                      divisiblePor.push(i);<br>
+                                                                      }<br>
+                                                                      }<br>
+                                                                      document.getElementById('ej-16-divisores').innerText
+                                                                      = 'Los divisores comunes de los números son: ' +
+                                                                      divisiblePor;<br>
+                                                                      }<br>
+                                                                      } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba el primer número entero"
+                                                  id="ej-16-numero-1">
+                                        <input type="text" placeholder="Escriba el segundo número entero"
+                                                  id="ej-16-numero-2">
+                                        <button onclick="divisorComun()">Calcuar divisor común</button>
+                                        <p id='ej-16-divisores'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-17 ej">
+                                        <h2>17. Escribir un programa que nos diga si un número dado es primo (no es
+                                                  divisible
+                                                  por ninguno otro número que no sea él mismo o la unidad)
+                                        </h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function esPrimo() { // boton "Es primo?"<br>
+                                                  const numero = document.getElementById("ej-17-numero").value; //
+                                                  capturo lo que se escriba en el input. <br>
+                                                  contadorDivisores = 0;<br>
+                                                  <br>
+                                                  for (let i = 2; i < numero / 2; i++) { // hasta que (i < numero / 2)
+                                                            porque después se repetirían los divisores.<br>
+                                                            if (numero % i == 0) { // el resto de dividir un primo por
+                                                            cualquier número que no sea 1 o el mismo, es diferente a
+                                                            cero.<br>
+                                                            contadorDivisores = contadorDivisores + 1;<br>
+                                                            }<br>
+                                                            }<br>
+                                                            <br>
+                                                            if (contadorDivisores != 0) {<br>
+                                                            document.getElementById('ej-17-primo').innerText = 'El
+                                                            número ingresado NO es un número primo';<br>
+                                                            } else {<br>
+                                                            document.getElementById('ej-17-primo').innerText = 'El
+                                                            número ingresado SI es un número primo';<br>
+                                                            }<br>
+                                                            }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-17-numero">
+                                        <button onclick="esPrimo()">Es primo?</button>
+                                        <p id='ej-17-primo'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-18 ej">
+                                        <h2>18. Pide la edad y si es mayor de 18 años indica que ya puede conducir.
+                                        </h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  (visto en clase 25/04/2024)*/<br>
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  function determinar() { // boton "Calular permiso"<br>
+                                                  const edadEnHtml = document.getElementById('ej-18-numero'); //
+                                                  selecciono el elemennto input del docuemnto.<br>
+                                                  const edad = Number(edadEnHtml.value); // captura el valor del y lo
+                                                  convierte a número con la funcion Number().<br>
+                                                  <br>
+                                                  // como quiero validar que exista un valor<br>
+                                                  if (!edad) { // si cuando el input este vacío (sea diferente a la
+                                                  variable)<br>
+                                                  edadEnHtml.classList.add('error'); // cambia la clase del input, para
+                                                  que coincida con una clase determinada en el .css que cambia el color
+                                                  a rojo.<br>
+                                                  return;<br>
+                                                  } else {<br>
+                                                  edadEnHtml.classList.remove('error'); // remueve la clase si el input
+                                                  no esta vacío.<br>
+                                                  }<br>
+                                                  <br>
+                                                  // invoco a la función con el parametro<br>
+                                                  if (esMayorDeEdad(edad)) {<br>
+                                                  // tomar el p y acualizar su innerText || innerHTML<br>
+                                                  document.getElementById('ej-18-permiso').innerHTML = '<b>SI es mayor
+                                                            de edad, puede conducir.</b>';<br>
+                                                  } else {<br>
+                                                  document.getElementById('ej-18-permiso').innerHTML = '<b>NO es mayor
+                                                            de edad, puede conducir.</b>';<br>
+                                                  }<br>
+                                                  }<br>
+                                                  /*<br>
+                                                  // si edad < 18 años=> false<br>
+                                                            // si edad => 18 años => true<br>
+                                                            */<br>
+                                                            function esMayorDeEdad(edad) {<br>
+                                                            //aca va la logica!<br>
+                                                            if (edad >= 18) {<br>
+                                                            return true;<br>
+                                                            } else {<br>
+                                                            return false;<br>
+                                                            }<br>
+                                                            } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número" id="ej-18-numero">
+                                        <button onclick="determinar()">Calular permiso</button>
+                                        <p id='ej-18-permiso'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-19 ej">
+                                        <h2>19. Pide una nota (número). Muestra la calificación según la nota:</h2>
+                                        <h3>
+                                                  <ul>
+                                                            <li>0-3: Muy deficiente</li>
+                                                            <li>0-3: Muy deficiente</li>
+                                                            <li>3-5: Insuficiente</li>
+                                                            <li>5-6: Suficiente</li>
+                                                            <li>6-7: Bien</li>
+                                                            <li>7-9: Notable</li>
+                                                            <li>9-10: Sobresaliente</li>
+                                                  </ul>
+                                        </h3>
+<!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  const calificacion = ['Muy deficiente', 'Insuficiente',
+                                                  'Suficiente','Bien', 'Notable', 'Sobresaliente'];<br>
+                                                  const escribir = document.getElementById('ej-19-calificacion');<br>
+                                                  <br>
+                                                  function calificarNota() { // boton "Calificación"<br>
+                                                  const nota = document.getElementById('ej-19-nota'); // selecciono el
+                                                  elemennto input del documento.<br>
+                                                  const nota_numero = Number(nota.value); // captura el valor del y lo
+                                                  convierte a número con la funcion Number().<br>
+                                                  if (nota_numero <= 3) { <br>
+                                                            escribir.innerHTML=calificacion[0]; <br>
+                                                            } if (nota_numero> 3 && nota_numero <= 5) { <br>
+                                                                      escribir.innerHTML=calificacion[1]; <br>
+                                                                      } if (nota_numero> 5 && nota_numero <= 6) {<br>
+                                                                                escribir.innerHTML=calificacion[2]; <br>
+                                                                                } if (nota_numero> 6 && nota_numero <=
+                                                                                          7) {<br>
+                                                                                          escribir.innerHTML=calificacion[3];<br>
+                                                                                          } if (nota_numero> 7 &&
+                                                                                          nota_numero <= 9) {<br>
+                                                                                                    escribir.innerHTML=calificacion[4];<br>
+                                                                                                    } if
+                                                                                                    (nota_numero==10)
+                                                                                                    {<br>
+                                                                                                    escribir.innerHTML=calificacion[5];<br>
+                                                                                                    } <br>
+                                                                                                    } <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba una nota (número entero)"
+                                                  id="ej-19-nota">
+                                        <button onclick="calificarNota()">Calificación</button>
+                                        <p id='ej-19-calificacion'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-20 ej">
+                                        <h2>20. Realiza un script que pida cadenas de texto hasta que se pulse
+                                                  “cancelar”. Al
+                                                  salir con “cancelar” deben mostrarse todas las cadenas concatenadas
+                                                  con un
+                                                  guión.</h2>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li-->
+                                                  <li>1ero: El programa iniciará con una variable determinada como true.
+                                                            Y en otra función guardo el valor del parrafo.
+                                                            Ambas variables se sitúan fuera de funciones.
+                                                  </li>
+                                                  <li>2do: Un botón ejecutará una función para ir sumando los números
+                                                            ingresados.
+                                                            Dentro de esa función se inician dos variables, una variable
+                                                            guarda el valor ingresado,
+                                                            y con otra variable ingresamos a un while, mientras esta
+                                                            variable tenga el
+                                                            valor true.</li>
+                                                  <li>3ro: Dentro del while iré concatenando las cadenas de texto.</li>
+                                                  <li>4to: Por otro lado, una función estará adherida a el botón
+                                                            cancelar, esta función cambiará de valor a la variable.</li>
+                                                  <li>5to: Cuando la variable cambie su valor a 'false', el while
+                                                            termina y se imprimirá en pantalla la concatenación completa
+                                                            en el parrafo destinado a ello.</li>
+                                        </ul>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  let cadenas = ""; // variable que guardará las cadenas de texto<br>
+                                                  const respuesta_ej_20 = document.getElementById('ej-20-cadena-texto');
+                                                  // este parrafo esta destinado para la respuesta al ejercicio<br>
+                                                  <br>
+                                                  function concatenar() { // boton Agregar texto<br>
+                                                  const mientras = true; // inicia con el valor true <br>
+                                                  const texto = document.getElementById('ej-20-encadenar'); // agarro el
+                                                  texto introducido en el input <br>
+                                                  while(mientras){<br>
+                                                  cadenas = cadenas + '-' + texto.value;<br>
+                                                  mientras = false;<br>
+                                                  texto.innerText = '';<br>
+                                                  }<br>
+                                                  }<br>
+                                                  <br>
+                                                  function cancelarConcatenacion() { // boton cancelar<br>
+                                                  respuesta_ej_20.innerText = cadenas;<br>
+                                                  }
+
+                                                  <br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un texto" id="ej-20-encadenar">
+                                        <button onclick="concatenar()">Agregar texto</button>
+                                        <button onclick="cancelarConcatenacion()">Cancelar</button>
+                                        <p id='ej-20-cadena-texto'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-21 ej">
+                                        <h2>21. Realiza un script que pida números hasta que se pulse “cancelar”. Si no
+                                                  es un
+                                                  número deberá indicarse con un «alert» y seguir pidiendo. Al salir con
+                                                  “cancelar”
+                                                  deberá indicarse la suma total de los números introducido</h2>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  let sumaTotal_ej_21 = 0; // variable que guardará las sumas de los
+                                                  números<br>
+                                                  const respuesta_ej_21 = document.getElementById('ej-21-suma-total');
+                                                  // este parrafo esta destinado para la respuesta al ejercicio<br>
+                                                  <br>
+                                                  function sumarTodos() { //boton Sumar número <br>
+                                                  debugger;<br>
+                                                  let mientras_ej_21 = true; // inicia con el valor true<br>
+                                                  let numero_ej_21 = document.getElementById('ej-21-numero').value; //
+                                                  agarro el valor introducido en el input <br>
+                                                  console.log(isNaN(numero_ej_21));<br>
+                                                  <br>
+                                                  // validación de que numero_ej_21 es de tipo Number
+                                                  if(isNaN(numero_ej_21)){<br>
+                                                  alert('Recuerde que debe ingresar un valor numérico.');<br>
+                                                  document.getElementById('ej-21-numero').value = " "; // limpia el
+                                                  input<br>
+                                                  }else{<br>
+                                                  while(mientras_ej_21==true){<br>
+                                                  sumaTotal_ej_21 = sumaTotal_ej_21 + Number(numero_ej_21);<br>
+                                                  mientras_ej_21 = false; // con esto sale del while<br>
+                                                  document.getElementById('ej-21-numero').value = " "; // limpia el
+                                                  input<br>
+                                                  }<br>
+                                                  }<br>
+                                                  }<br>
+                                                  function terminarSumaTotal() { // boton cancelar<br>
+                                                  respuesta_ej_21.innerText = sumaTotal_ej_21;<br>
+                                                  }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número entero" id="ej-21-numero">
+                                        <button onclick="sumarTodos()">Sumar número</button>
+                                        <button onclick="terminarSumaTotal()">Cancelar</button>
+                                        <p id='ej-21-suma-total'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-22 ej">
+                                        <h2>22. Realizar una página con un script que calcule el valor de la letra de un
+                                                  número
+                                                  de DNI (Documento Nacional de Identidad).
+                                                  El algoritmo para calcular la letra del dni es el siguiente :</h2>
+                                        <h3>
+                                                  <ul>
+                                                            <li>El número debe ser entre 0 y 99999999.</li>
+                                                            <li>Debemos calcular el resto de la división entera entre el
+                                                                      número y el número 23.</li>
+                                                            <li>Según el resultado, de 0 a 22, le corresponderá una
+                                                                      letra de las siguientes:
+                                                                      (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S,
+                                                                      Q, V, H, L, C, K, E)</li>
+                                                            <li>Si lo introducido no es un número deberá indicarse con
+                                                                      un alert y volver a preguntar.</li>
+                                                            <li>Deberá de repetirse el proceso hasta que el usuario
+                                                                      pulse «cancelar».</li>
+                                                  </ul>
+                                        </h3>
+                                        <!-- listas no ordenadas -->
+                                        <ul class="comentario"><!-- listas: items etiquetas li -->
+                                                  <li>1ero: Definir una variable donde se guardará el valor del input.
+                                                  </li>
+                                                  <li>2do: Un boton ejecutará una función que realiza la división.</li>
+                                                  <li>3ro: En una variable se guardará el valor del resto de la
+                                                            división.</li>
+                                                  <li>4to: Dentro de la misma función con un switch designaremos los
+                                                            valores de la variable,
+                                                            y a cada valor le asignaremos una función.</li>
+                                        </ul>
+
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  const letra_dni_ej_22 = document.getElementById('ej-22-letra-dni'); //
+                                                  este parrafo esta destinado para la respuesta al ejercicio<br>
+                                                  <br>
+                                                  function calcularLetraDni() { // boton "Calcular letra"<br>
+                                                  let letra_dni = "";<br>
+                                                  let numero_ej_22 = document.getElementById('ej-22-numero-dni').value;
+                                                  // agarro el valor introducido en el input<br>
+                                                  let num_ej_22 = Number(numero_ej_22);<br>
+                                                  <br>
+                                                  let mientras_ej_22 = true;<br>
+                                                  while (mientras_ej_22 == true) {<br>
+                                                  // validación si numero_ej_22 es un número <br>
+                                                  if (isNaN(numero_ej_22)) {<br>
+                                                  alert('Recuerde que debe ingresar un valor numérico.');<br>
+                                                  letra_dni_ej_22.innerText = 'Por favor reingrese el número DNI.';<br>
+                                                  document.getElementById('ej-22-numero-dni').value = " "; // limpia el
+                                                  input<br>
+                                                  } else {<br>
+                                                  <br>
+                                                  if (num_ej_22 > 0 && num_ej_22 < 99999999) {<br>
+                                                            <br>
+                                                            let resto = num_ej_22 % 23;
+                                                            <br>
+                                                            switch (resto) {<br>
+                                                            case 0: letra_dni = "T";<br>
+                                                            break;<br>
+                                                            case 1: letra_dni = "R";<br>
+                                                            break;<br>
+                                                            case 2: letra_dni = "W";<br>
+                                                            break;<br>
+                                                            case 3: letra_dni = "A";<br>
+                                                            break;<br>
+                                                            case 4: letra_dni = "G";<br>
+                                                            break;<br>
+                                                            case 5: letra_dni = "M";<br>
+                                                            break;<br>
+                                                            case 6: letra_dni = "Y";<br>
+                                                            break;<br>
+                                                            case 7: letra_dni = "F";<br>
+                                                            break;<br>
+                                                            case 8: letra_dni = "P";<br>
+                                                            break;<br>
+                                                            case 9: letra_dni = "D";<br>
+                                                            break;<br>
+                                                            case 10: letra_dni = "X";<br>
+                                                            break;<br>
+                                                            case 11: letra_dni = "B";<br>
+                                                            break;<br>
+                                                            case 12: letra_dni = "N";<br>
+                                                            break;<br>
+                                                            case 13: letra_dni = "J";<br>
+                                                            break;<br>
+                                                            case 14: letra_dni = "Z";<br>
+                                                            break;<br>
+                                                            case 15: letra_dni = "S";<br>
+                                                            break;<br>
+                                                            case 16: letra_dni = "Q";<br>
+                                                            break;<br>
+                                                            case 17: letra_dni = "V";<br>
+                                                            break;<br>
+                                                            case 18: letra_dni = "H";<br>
+                                                            break;<br>
+                                                            case 19: letra_dni = "L";<br>
+                                                            break;<br>
+                                                            case 20: letra_dni = "C";<br>
+                                                            break;<br>
+                                                            case 21: letra_dni = "K";<br>
+                                                            break;<br>
+                                                            case 22: letra_dni = "E";<br>
+                                                            break;<br>
+                                                            } // termmina el switch<br>
+                                                            } else {<br>
+                                                            alert('Recuerde que el valor del número ingresado debe ser
+                                                            entre 0 y 99999999');<br>
+                                                            document.getElementById('ej-22-numero-dni').value = " "; //
+                                                            limpia el input<br>
+                                                            }<br>
+                                                            letra_dni_ej_22.innerText = 'El número ingresado fue: ' +
+                                                            num_ej_22 + ' y su letra DNI es: ' + letra_dni;<br>
+                                                            document.getElementById('ej-22-numero-dni').value = " "; //
+                                                            limpia el input <br>
+                                                            }<br>
+                                                            mientras_ej_22 = false // sale del while<br>
+                                                            } // termina el while<br>
+                                                            }<br>
+                                                            <br>
+                                                            <br>
+                                                            function cancelarLetraDNI() { // boton "cancelar"<br>
+                                                            letra_dni_ej_22.innerText = "-";<br>
+                                                            numero_ej_22 = "";<br>
+                                                            }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número de DNI" id="ej-22-numero-dni">
+                                        <button onclick="calcularLetraDni()">Calcular letra</button>
+                                        <button onclick="cancelarLetraDNI()">Cancelar</button>
+                                        <p id='ej-22-letra-dni'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-23 ej">
+                                        <h2>23. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente
+                                                  forma :
+                                        </h2>
+                                        <h3>
+                                                  <ul>
+                                                            <li>1</li>
+                                                            <li>22</li>
+                                                            <li>333</li>
+                                                            <li>4444</li>
+                                                            <li>55555</li>
+                                                            <li>666666</li>
+                                                            <li>.........</li>
+                                                  </ul>
+                                        </h3>
+                                        <!-- -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  let respuestas_ej_23 = "";<br>
+                                                  function armarPiramide() { // boton "Piramide"<br>
+                                                  for (let i = 0; i <= 30; i++) {<br>
+                                                            respuestas_ej_23 = ""; /* cuando ingresa al primer for, <br>
+                                                            la variable respuestas_ej_23 se reinicia en vacío, <br>
+                                                            esto es para lograr que no se reescriba las respuestas caca
+                                                            vez que ingresa al segundo for */<br>
+                                                            // unos = unos + 1; <br>
+                                                            for (let j = 0; j < i; j++) {<br>
+                                                                      respuestas_ej_23 = respuestas_ej_23 + i;<br>
+                                                                      }<br>
+                                                                      /* cada vez que sale del segundo for, <br>
+                                                                      se imprime en el parrafo destinado a eso,<br>
+                                                                      la concatenación de valores i, desde j=0 mientras
+                                                                      j < i */<br>
+                                                                                document.getElementById('ej-23-armar-piramide').innerHTML
+                                                                                += respuestas_ej_23 + "br>";<br>
+                                                                                }<br>
+                                                                                }<br>
+                                        </p>
+                                        <button onclick="armarPiramide()">Piramide</button>
+                                        <p id='ej-23-armar-piramide'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-24 ej">
+                                        <h2>24. Haz un script que escriba una pirámide inversa de los números del 1 al
+                                                  número que indique el usuario de la siguiente forma : (suponiendo que
+                                                  indica 6).
+                                        </h2>
+                                        <h3>
+                                                  <ul>
+                                                            <li>666666</li>
+                                                            <li>55555</li>
+                                                            <li>4444</li>
+                                                            <li>333</li>
+                                                            <li>22</li>
+                                                            <li>1</li>
+                                                  </ul>
+                                        </h3>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  let respuestas_ej_24 = ""<br>
+                                                  <br>
+                                                  function armarPiramideInversa() { // boton "Piramide inversa"<br>
+                                                  const numero_del_usuario =
+                                                  document.getElementById('ej-24-numero-usuario').value; <br>
+                                                  // valor ingresado al input, con este número inicia la piramide
+                                                  invertida <br>
+                                                  /* la variable i, debe iniciar con el valor numérico ingresado por el
+                                                  usuario,<br>
+                                                  y en cada iteración reducir una unidad el valor de i,<br>
+                                                  mientras i sea mayor a cero. */<br>
+                                                  for (let i = numero_del_usuario; i > 0; i--) {<br>
+                                                  respuestas_ej_24 = ""; /* cuando ingresa al primer for, <br>
+                                                  la variable respuestas_ej_23 se reinicia en vacío, <br>
+                                                  esto es para lograr que no se reescriba las respuestas caca vez que
+                                                  ingresa al
+                                                  segundo for */<br>
+                                                  // unos = unos + 1; <br>
+                                                  for (let j = 0; j < i; j++) {<br>
+                                                            respuestas_ej_24 = respuestas_ej_24 + i;<br>
+                                                            }<br>
+                                                            /* cada vez que sale del segundo for, <br>
+                                                            se imprime en el parrafo destinado a eso,<br>
+                                                            la concatenación de valores i, desde j=0 mientras j <
+                                                                      i*/<br>
+                                                                      document.getElementById('ej-24-armar-piramide').innerHTML
+                                                                      +=
+                                                                      respuestas_ej_24 + "br>";<br>
+                                                                      }<br>
+                                                                      }<br>
+                                        </p>
+                                        <input type="text" placeholder="Escriba un número (entero)"
+                                                  id="ej-24-numero-usuario">
+                                        <button onclick="armarPiramideInversa()">Piramide
+                                                  inversa</button>
+                                        <p id='ej-24-armar-piramide'>-</p>
+                              </div>
+                    </div>
+                    <hr>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+                    <div class="ejercicio">
+                              <div class="ejercio-25 ej">
+                                        <h2>25. Un script que escriba los números del 1 al 500, que indique cuáles son
+                                                  múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea
+                                                  horizontal. Por
+                                                  ejemplo :</h2>
+                                        <h3>
+                                                  <ul>
+                                                            <li>1</li>
+                                                            <li>2</li>
+                                                            <li>3</li>
+                                                            <li>4 (Múltiplo de 4)</li>
+                                                            <li>5</li>
+                                                            <li>————————————————————</li>
+                                                            <li>6</li>
+                                                            <li>7</li>
+                                                            <li>8 (Múltiplo de 4)</li>
+                                                            <li>9 (Múltiplo de 9)</li>
+                                                            <li>10</li>
+                                                  </ul>
+                                        </h3>
+                                        <!--  -->
+                                        <p class="consola roboto-mono-codigo">
+                                                  <br>
+                                                  // código javascript 
+                                                  <br>
+                                                  let respuestas_ej_25 = ""<br>
+                                                  function armarListaNumeros() { // boton "Numeros" <br>
+                                                  /* */<br>
+                                                  for (let i = 1; i <= 500; i++) { <br>
+                                                            let numero_ej_25 = ""<br>
+                                                            // escribe números del 1 al 500. <br>
+                                                            <br>
+                                                            // condiciones:
+                                                            // idicar cuáles son múltiplos de 4.<br>
+                                                            if(i % 4 == 0){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 4)" + "br>";<br>
+                                                            if(i % 4 == 0 && i % 5 == 0 ){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 4)" + "br>" +
+                                                            "_____________________________________" + "br>";<br>
+                                                            }<br>
+                                                            if(i % 4 == 0 && i % 9 == 0 ){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 4) y (Múltiplo de 9)" +
+                                                            "br>";<br>
+                                                            }<br>
+                                                            if(i % 4 == 0 && i % 5 == 0 && i % 9 == 0 ){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 4) y (Múltiplo de 9)" +
+                                                            "br>" + "_____________________________________" + "br>";
+                                                            <br>
+                                                            }<br>
+                                                            }<br>
+                                                            // idicar cuáles son múltiplos de 9.<br>
+                                                            else if(i % 9 == 0 ){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 9)" + "br>";<br>
+                                                            if(i % 9 == 0 && i % 5 == 0 ){<br>
+                                                            numero_ej_25 = i + " (Múltiplo de 9)" + "br>" +
+                                                            "_____________________________________" + "br>";<br>
+                                                            }<br>
+                                                            }<br>
+                                                            // cada 5 línea que muestre una línea horizontal.<br>
+                                                            else if(i % 5 == 0 ){<br>
+                                                            numero_ej_25 = i + "br>" +
+                                                            "_____________________________________" + "br>";<br>
+                                                            }else {<br>
+                                                            numero_ej_25 = i + "br>";<br>
+                                                            }<br>
+                                                            console.log('último else');<br>
+                                                            document.getElementById('ej-25-armar-lista').innerHTML +=
+                                                            numero_ej_25;<br>
+                                                            }<br>
+                                                            }<br>
+                                        </p>
+                                        <button onclick="armarListaNumeros()">Numeros</button>
+                                        <p id='ej-25-armar-lista'>-</p>
+                              </div>
+                    </div>
+                    <!-- ----------------------------------------------------------------------------------------------------------------------- -->
+          </main>
+          <!-- Relacionar archivo javascript -->
+          <script src="unidad-1.js"></script>
+</body>
+
+</html>
